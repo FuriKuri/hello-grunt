@@ -3,4 +3,8 @@ module.exports = function(grunt) {
     // console.log('Hello form Grunt');
     grunt.log.writeln('Hello from Grunt');
   });
+
+  grunt.registerTask('greet', function(name) {
+    grunt.log.writeln('Hi there, ' + name);
+  });
 }
