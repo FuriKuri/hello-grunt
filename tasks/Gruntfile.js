@@ -7,4 +7,9 @@ module.exports = function(grunt) {
   grunt.registerTask('greet', function(name) {
     grunt.log.writeln('Hi there, ' + name);
   });
+
+  grunt.registerTask('addNumbers', function(first, second) {
+    var answer = Number(first) + Number(second);
+    grunt.log.writeln(first + ' + ' + second + ' is ' + answer);
+  });
 }
