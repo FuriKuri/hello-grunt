@@ -17,4 +17,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('all', ['default', 'greet:Brian', 'addNumbers:2:3']);
+
+  grunt.registerTask('praise', 'Have Grunt say nice things about you.', function(){
+    var praise = ['You are awesome', 'Everyone loves you'];
+    var pick = praise[(Math.floor(Math.random() * praise.length))];
+    grunt.log.writeln(pick)
+  });
 }
